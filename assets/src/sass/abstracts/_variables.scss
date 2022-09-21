@@ -1,0 +1,33 @@
+// ######## Custom variables #########
+
+$primary: hsl(171, 66%, 44%);
+$secondary: hsl(233, 100%, 69%);
+
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+$light-grayish-blue: hsl(201, 11%, 80%);
+$white: rgba(255, 255, 255);
+
+$dark-theme-body-color: hsl(210, 10%, 95%);
+$dark-theme-heading-color: hsl(210, 10%, 65%);
+$dark-theme-bg-color: hsl(210, 10%, 15%);
+$dark-theme-very-dark-bg-color: hsl(210, 10%, 12%);
+
+$font-size-root: 18px;
+$font-family-base: "Bai Jamjuree", sans-serif;
+
+$padding-home-section: 3.8rem;
+
+$font-weight-lighter: 400;
+$font-weight-light: 400;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 600;
+$font-weight-bolder: 600;
+
+// ######### Custom properties ##########
+
+// ######## Base URL #########
+// for development as the absolute path can be different with the server
+
+$base-url: "https://ihsansfd.github.io/frontend-mentor-clipboard";

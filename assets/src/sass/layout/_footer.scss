@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/variables" as var;
+@use "../custom/custom_bootstrap" as bs;
+@use "sass:color";
+
+.site-footer {
+  background-color: color.adjust(var.$grayish-blue, $lightness: 30%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: bs.$primary;
+    }
+  }
+}
+
+.footer-columns {
+  color: var.$dark-grayish-blue;
+}
+
+.footer-column {
+  width: 100%;
+  flex: 0 0 auto;
+
+  @include bs.media-breakpoint-up(sm) {
+    width: 30%;
+  }
+
+  @include bs.media-breakpoint-up(md) {
+    width: 20%;
+  }
+
+  @include bs.media-breakpoint-up(lg) {
+    width: 15%;
+  }
+  &:last-child {
+    @include bs.media-breakpoint-up(xl) {
+      width: 30%;
+    }
+
+    @include bs.media-breakpoint-up(xxl) {
+      width: 40%;
+    }
+
+    &__icon-group {
+      @include bs.media-breakpoint-up(xl) {
+        margin-left: auto;
+      }
+    }
+  }
+  &__wrapper {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    @include bs.media-breakpoint-up(md) {
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+
+  &__menu-items {
+    text-align: center;
+    @include bs.media-breakpoint-up(md) {
+      text-align: start;
+    }
+  }
+
+  &__logo {
+    height: 2.78rem;
+  }
+}
+
+.footer-column-5 {
+  align-self: center;
+  &__wrapper {
+    @include bs.media-breakpoint-up(md) {
+      margin-left: auto;
+    }
+  }
+}

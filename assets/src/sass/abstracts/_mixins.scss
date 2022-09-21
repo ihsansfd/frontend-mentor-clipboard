@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/variables" as var;
+
+@mixin padding-y-home-section {
+  padding-top: var.$padding-home-section;
+  padding-bottom: var.$padding-home-section;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}

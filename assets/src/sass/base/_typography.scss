@@ -1,0 +1,10 @@
+/**
+ * Basic typography style for copy text
+ */
+
+@use "../custom/custom_bootstrap" as bs;
+
+body {
+  font-size: bs.$font-size-root;
+  font-family: bs.$font-family-sans-serif;
+}

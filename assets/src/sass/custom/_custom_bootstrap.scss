@@ -1,0 +1,40 @@
+// This file is used to override vendors variables and any other default values
+
+@use "../abstracts/variables" as var;
+// ######## Override Bootstrap variables #########
+
+$primary: var.$primary;
+$secondary: var.$secondary;
+
+$font-size-root: var.$font-size-root;
+$font-size-base: 1rem;
+$font-family-sans-serif: var.$font-family-base;
+
+$font-weight-lighter: var.$font-weight-lighter;
+$font-weight-light: var.$font-weight-light;
+$font-weight-normal: var.$font-weight-normal;
+$font-weight-semibold: var.$font-weight-semibold;
+$font-weight-bold: var.$font-weight-bold;
+$font-weight-bolder: var.$font-weight-bolder;
+
+$h1-font-size: $font-size-base * 2.23;
+$h2-font-size: $font-size-base * 1.65;
+$h3-font-size: $font-size-base * 1.12;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 4,
+);
+
+// ######## End Override Bootstrap variables #########
+
+// Your vendor files
+@import "../vendors/bootstrap/bootstrap.scss";

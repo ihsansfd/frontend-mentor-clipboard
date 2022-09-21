@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+
+@use "../custom/custom_bootstrap" as bs;
+@use "../abstracts/variables" as var;
+
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bs.$font-weight-bold;
+  color: var.$dark-grayish-blue;
+}
+
+.container {
+  @include bs.media-breakpoint-down(sm) {
+    max-width: 90%;
+  }
+}

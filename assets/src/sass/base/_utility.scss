@@ -1,0 +1,36 @@
+@use "../custom/custom_bootstrap" as bs;
+
+.col {
+  &-2_5 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  &-lg {
+    &-2_5 {
+      @include bs.media-breakpoint-up(lg) {
+        flex: 0 0 auto;
+        width: 20%;
+      }
+    }
+  }
+
+  &-xl {
+    &-2_5 {
+      @include bs.media-breakpoint-up(xl) {
+        flex: 0 0 auto;
+        width: 20%;
+      }
+    }
+  }
+
+  &-xxl {
+    &-2_5 {
+      @include bs.media-breakpoint-up(xxl) {
+        flex: 0 0 auto;
+        width: 20%;
+      }
+    }
+  }
+}
+

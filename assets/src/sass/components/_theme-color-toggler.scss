@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as var;
+@use "../custom/custom_bootstrap" as bs;
+
+%theme-toggler-icon {
+  font-size: 1.1rem;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.theme-toggler {
+  --cb-theme-toggler-border-radius: #{bs.$border-radius-pill};
+  --cb-theme-toggler-light-bg: #{var.$light-grayish-blue};
+  --cb-theme-toggler-dark-bg: #{var.$dark-theme-very-dark-bg-color};
+  --cb-theme-toggler-button-light-bg: #{bs.$white};
+  --cb-theme-toggler-dark-icon-bg: #{var.$dark-grayish-blue};
+  --cb-theme-toggler-light-icon-bg: #{var.$light-grayish-blue};
+  --cb-theme-toggler-button-transition: left 600ms ease-in-out;
+  position: absolute;
+  right: 5vw;
+  top: 5vh;
+
+  &__container {
+    width: 4.5rem;
+    height: 2rem;
+    background-color: var(--cb-theme-toggler-light-bg);
+    border-radius: var(--cb-theme-toggler-border-radius);
+  }
+
+  &__dark-icon {
+    @extend %theme-toggler-icon;
+    color: var(--cb-theme-toggler-dark-icon-bg);
+    right: 15%;
+  }
+
+  &__light-icon {
+    @extend %theme-toggler-icon;
+    color: var(--cb-theme-toggler-light-icon-bg);
+    left: 15%;
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border-radius: 60%;
+    background-color: var(--cb-theme-toggler-button-light-bg);
+    padding: 0.8rem;
+    transition: var(--cb-theme-toggler-button-transition);
+  }
+
+  &.active {
+    .theme-toggler__container {
+      background-color: var(--cb-theme-toggler-dark-bg) !important;
+    }
+    .theme-toggler__button {
+      left: unset;
+      left: 60%;
+    }
+  }
+}

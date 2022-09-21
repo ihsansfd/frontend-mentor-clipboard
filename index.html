@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/build/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="assets/build/css/main.css" />
+    <link rel="stylesheet" href="assets/build/icons/fontawesome/css/all.css" />
+    <script src="assets/build/js/bootstrap/bootstrap.bundle.js" defer></script>
+    <script src="assets/build/js/custom/script.js" defer></script>
+
+    <title>Frontend Mentor | Clipboard landing page</title>
+  </head>
+  <body>
+    <div class="theme-toggler">
+      <div class="theme-toggler__container">
+        <div class="theme-toggler__button"></div>
+        <i class="theme-toggler__dark-icon fa-solid fa-moon"></i>
+        <i class="theme-toggler__light-icon fa-solid fa-sun"></i>
+      </div>
+    </div>
+    <main>
+      <header>
+        <section class="site-hero">
+          <div
+            class="container d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <img
+              src="assets/build/images/logo.svg"
+              class="site-hero__site-logo"
+              alt="Clipboard Logo"
+            />
+            <div class="site-hero__content">
+              <div class="site-hero__text mt-5 mb-4">
+                <h1 class="site-hero__title mb-3">
+                  A history of everything you copy
+                </h1>
+                <p class="site-hero__description">
+                  Clipboard allows you to track and organize everything you
+                  copy. Instantly access your clipboard on all your devices.
+                </p>
+              </div>
+              <a href="#" class="cb-btn btn me-2 mb-3 mb-md-0 shadow"
+                >Download for iOS</a
+              >
+              <a href="#" class="cb-btn--secondary btn shadow"
+                >Download for Mac</a
+              >
+            </div>
+          </div>
+        </section>
+      </header>
+      <section class="cta-section-1 cta-section">
+        <div class="container">
+          <div
+            class="cta-section-1__content-1 cta-section__content mx-auto mb-5"
+          >
+            <div class="cta-section__text text-center">
+              <h2 class="cta-section__title mb-3">
+                Keep track of your snippets
+              </h2>
+              <p class="cta-section__description">
+                Clipboard instantly stores any item you copy in the cloud,
+                meaning you can access your snippets immediately on all your
+                devices. Our Mac and iOS apps will help you organize everything.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container cta-section-1__subsection__container">
+          <div class="cta-section-1__subsection">
+            <div class="cta-section-1__image-overlay-wrapper">
+              <div
+                class="cta-section-1__image-overlay"
+                aria-label="Computer Image"
+              ></div>
+            </div>
+            <img
+              src="assets/build/images/image-computer.png"
+              alt="Computer Image"
+              class="cta-section-1__image-mobile"
+            />
+            <div
+              class="cta-section-1__subcontent text-center text-lg-start mx-auto"
+            >
+              <div class="cta-section-1__subtext">
+                <h3 class="cta-section__subtitle">Quick Search</h3>
+                <p class="cta-section__subdescription">
+                  Easily search your snippets by content, category, web address,
+                  application, and more.
+                </p>
+              </div>
+              <div class="cta-section-1__subtext">
+                <h3 class="cta-section__subtitle">iCloud Sync</h3>
+                <p class="cta-section__subdescription">
+                  Instantly saves and syncs snippets across all your devices.
+                </p>
+              </div>
+              <div class="cta-section-1__subtext">
+                <h3 class="cta-section__subtitle">Complete History</h3>
+                <p class="cta-section__subdescription">
+                  Retrieve any snippets from the first moment you started using
+                  the app.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section-2 cta-section">
+        <div class="container">
+          <div class="cta-section-2__content cta-section__content mx-auto mb-5">
+            <div class="cta-section__text text-center">
+              <h2 class="cta-section__title mb-3">Access Clipboard Anywhere</h2>
+              <p class="cta-section__description">
+                Whether you’re on the go, or at your computer, you can access
+                all your Clipboard snippets in a few simple clicks.
+              </p>
+            </div>
+          </div>
+          <img
+            src="assets/build/images/image-devices.png"
+            alt="Devices Image"
+            class="cta-section-2__image d-block mx-auto"
+          />
+        </div>
+      </section>
+      <section class="cta-section-3 cta-section">
+        <div class="cta-section-3__content cta-section__content mx-auto mb-5">
+          <div class="cta-section__text text-center">
+            <h2 class="cta-section__title mb-3">Supercharge your workflow</h2>
+            <p class="cta-section__description">
+              We’ve got the tools to boost your productivity.
+            </p>
+          </div>
+        </div>
+        <div class="cta-section__columns">
+          <div class="container cta-section__columns__container text-center">
+            <div class="row justify-content-center gy-4">
+              <div class="col-12 col-lg-4">
+                <div class="cta-section-1__column cta-section__column">
+                  <div class="cta-section-1__column__image-wrapper mb-4">
+                    <img
+                      src="assets/build/images/icon-blacklist.svg"
+                      alt="Blacklist Icon"
+                      class="cta-section__column__image"
+                    />
+                  </div>
+                  <h3 class="cta-section__column__title mb-3">
+                    Create Blacklist
+                  </h3>
+                  <p
+                    class="cta-section__column__description cta-section__subdescription"
+                  >
+                    Ensure sensitive information never makes its way to your
+                    clipboard by excluding certain sources.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="cta-section-1__column cta-section__column">
+                  <div class="cta-section-1__column__image-wrapper mb-4">
+                    <img
+                      src="assets/build/images/icon-text.svg"
+                      alt="Blacklist Icon"
+                      class="cta-section__column__image"
+                    />
+                  </div>
+                  <h3 class="cta-section__column__title mb-3">
+                    Plain text snippets
+                  </h3>
+                  <p
+                    class="cta-section__column__description cta-section__subdescription"
+                  >
+                    Remove unwanted formatting from copied text for a consistent
+                    look.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="cta-section-1__column cta-section__column">
+                  <div class="cta-section-1__column__image-wrapper mb-4">
+                    <img
+                      src="assets/build/images/icon-preview.svg"
+                      alt="Blacklist Icon"
+                      class="cta-section__column__image"
+                    />
+                  </div>
+                  <h3 class="cta-section__column__title mb-3">Sneak preview</h3>
+                  <p
+                    class="cta-section__column__description cta-section__subdescription"
+                  >
+                    Quick preview of all snippets on your Clipboard for easy
+                    access.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section-4 cta-section">
+        <div class="cta-section__columns">
+          <div class="container cta-section__columns__container text-center">
+            <div class="row justify-content-center align-items-center gy-4">
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-2_5">
+                <div class="cta-section-4__column cta-section__column">
+                  <div class="cta-section-4__column__image-wrapper mb-4">
+                    <img
+                      src="assets/build/images/logo-google.png"
+                      alt="Google Icon"
+                      class="cta-section__column__image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-2_5">
+                <div class="cta-section-4__column cta-section__column">
+                  <div class="cta-section-4__column__image-wrapper mb-4">
+                    <img
+                      src="assets/build/images/logo-ibm.png"
+                      alt="Google Icon"
+                      class="cta-section__column__image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-2_5">
+                <div class="cta-section-4__column cta-section__column">
+                  <div class="cta-section-4__column__image-wrapper mb-4">
+                    <img
+                      src="assets/build/images/logo-microsoft.png"
+                      alt="Google Icon"
+                      class="cta-section__column__image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-2_5">
+                <div class="cta-section-4__column cta-section__column">
+                  <div class="cta-section-4__column__image-wrapper mb-4">
+                    <img
+                      src="assets/build/images/logo-hp.png"
+                      alt="Google Icon"
+                      class="cta-section__column__image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-2_5">
+                <div class="cta-section-4__column cta-section__column">
+                  <div class="cta-section-4__column__image-wrapper mb-4">
+                    <img
+                      src="assets/build/images/logo-vector-graphics.png"
+                      alt="Google Icon"
+                      class="cta-section__column__image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cta-section-5 cta-section">
+        <div class="container">
+          <div
+            class="cta-section-5__content cta-section__content mx-auto mb-5 text-center"
+          >
+            <div class="cta-section__text mb-4">
+              <h2 class="cta-section__title mb-3">
+                Clipboard for iOS and Mac OS
+              </h2>
+              <p class="cta-section__description">
+                Available for free on the App Store. Download for Mac or iOS,
+                sync with iCloud and you’re ready to start adding to your
+                clipboard.
+              </p>
+            </div>
+            <a href="#" class="cb-btn btn me-2 mb-3 mb-md-0 shadow"
+              >Download for iOS</a
+            >
+            <a href="#" class="cb-btn--secondary btn shadow"
+              >Download for Mac</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-columns row justify-content-center gy-4">
+          <div class="footer-column-1 footer-column">
+            <div class="footer-column__wrapper">
+              <img
+                src="assets/build/images/logo.svg"
+                alt="Clipboard Logo"
+                class="footer-column__logo"
+              />
+            </div>
+          </div>
+          <div class="footer-column-2 footer-column">
+            <div class="footer-column__wrapper">
+              <ul class="footer-column__menu-items list-style-type-none">
+                <li class="footer-column__menu-item mb-2">
+                  <a href="#">FAQs</a>
+                </li>
+                <li class="footer-column__menu-item">
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column-3 footer-column">
+            <div class="footer-column__wrapper">
+              <ul class="footer-column__menu-items list-style-type-none">
+                <li class="footer-column__menu-item mb-2">
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li class="footer-column__menu-item">
+                  <a href="#">Press Kit</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column-4 footer-column">
+            <div class="footer-column__wrapper">
+              <ul class="footer-column__menu-items list-style-type-none">
+                <li class="footer-column__menu-item">
+                  <a href="#">Install Guide</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column-5 footer-column">
+            <div class="footer-column-5__wrapper footer-column__wrapper">
+              <div class="footer-column-5__icon-group icon-group">
+                <a href="#"
+                  ><div class="icon-group__icon-wrapper">
+                    <i
+                      class="icon-group__icon fa-brands fa-facebook-f"
+                      aria-label="Clipboard Facebook Page"
+                    ></i></div
+                ></a>
+                <a href="#"
+                  ><div class="icon-group__icon-wrapper">
+                    <i
+                      class="icon-group__icon fa-brands fa-twitter"
+                      aria-label="Clipboard Twitter Page"
+                    ></i></div
+                ></a>
+                <a href="#"
+                  ><div class="icon-group__icon-wrapper">
+                    <i
+                      class="icon-group__icon fa-brands fa-instagram"
+                      aria-label="Clipboard Instagram Page"
+                    ></i></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as var;
+@use "../custom/custom_bootstrap" as bs;
+
+body {
+  transition: all 600ms ease-in;
+}
+
+.body-dark {
+  background-color: var.$dark-theme-bg-color;
+  color: var.$dark-theme-body-color;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .site-hero__title,
+  .cta-section__title,
+  .cta-section__subtitle,
+  .cta-section__column__title {
+    color: var.$dark-theme-heading-color;
+  }
+
+  .site-hero__description,
+  .cta-section__description,
+  .cta-section__subdescription {
+    color: var.$dark-theme-body-color;
+  }
+
+  .site-footer {
+    .footer-column {
+      color: var.$dark-theme-body-color;
+    }
+    background-color: var.$dark-theme-very-dark-bg-color;
+  }
+}
